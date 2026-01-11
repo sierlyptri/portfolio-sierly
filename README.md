@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💖 Portfolio Website - Sierly Putri Anjani
 
 A beautiful, modern, and minimalist personal portfolio website built with React, Tailwind CSS, and Framer Motion. Featuring a clean "girly but professional" aesthetic with pink accents and smooth animations.
