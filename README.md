@@ -20,6 +20,7 @@ This website is my **personal digital portfolio** to showcase:
 - UI/UX design projects
 - Academic & professional experiences
 - Certifications and achievements
+Live demo : https://portfolio-sierly-v1.vercel.app/
 
 The portfolio is built to be **scalable**, **clean**, and **easy to maintain**, while staying visually soft and professional.
 
