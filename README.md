@@ -81,6 +81,9 @@ The portfolio is built to be **scalable**, **clean**, and **easy to maintain**, 
 2. **Install dependencies**
    ```bash
    npm install
-3. npm run dev
-4. npm run build
-5. npm run preview
+3. ```bash
+   npm run dev
+4. ```bash
+   npm run build
+5. ```bash
+   npm run preview
