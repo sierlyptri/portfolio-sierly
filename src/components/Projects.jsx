@@ -10,16 +10,16 @@ const Projects = () => {
       description: 'A robust backend system designed to handle real-time movie scheduling, seat reservations, and seamless API integration for cinema transaction flows.',
       tech: ['Laravel', 'MySQL', 'RESTful API'],
       image: '/images/cinebook-preview.jpg',
-      github: 'https://github.com/sierlyptri',
-      demo: '#',
+      github: 'https://github.com/sierlyptri/laramart.git',
+      // demo: '#',
     },
     {
       title: 'Laramart: Scalable E-Commerce Backend Engine',
       description: 'A feature-rich e-commerce core focused on efficient product lifecycle management, shopping cart logic, and secure checkout processes with structured database architecture.',
       tech: ['Laravel', 'MySQL', 'Blade'],
       image: '/images/laramart-preview.jpg',
-      github: 'https://github.com/sierlyptri',
-      demo: '#',
+      github: 'https://github.com/sierlyptri/cinebook-be.git',
+      //demo: '#',
     }
   ];
 
@@ -147,7 +147,7 @@ const Projects = () => {
                     <Github className="w-4 h-4" />
                     GitHub
                   </motion.a>
-                  <motion.a
+                  {/*<motion.a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -157,7 +157,7 @@ const Projects = () => {
                   >
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
-                  </motion.a>
+                  </motion.a>*/}
                 </div>
               </motion.div>
             ))}
