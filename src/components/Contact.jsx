@@ -61,7 +61,7 @@ const Contact = () => {
         >
           {/* Email */}
           <motion.a
-            href="mailto:sierlypajani89@gmail.com"
+            href="mailto:sierlypanjani89@gmail.com"
             whileHover={{ scale: 1.02, y: -3 }}
             whileTap={{ scale: 0.98 }}
             className="flex items-center justify-center gap-4 mb-8 p-6 bg-pink-100 rounded-2xl hover:bg-pink-500 hover:text-white transition-all duration-300 group border border-pink-300"
