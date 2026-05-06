@@ -72,7 +72,7 @@ const Contact = () => {
             <div className="flex-1 text-left">
               <p className="text-sm text-gray-500 mb-1 group-hover:text-white/80">Email</p>
               <p className="text-lg font-semibold text-gray-900 group-hover:text-white transition-colors">
-                sierlypajani89@gmail.com
+                sierlypanjani89@gmail.com
               </p>
             </div>
             <Send className="w-5 h-5 text-pink-500 group-hover:text-white transition-colors" />
