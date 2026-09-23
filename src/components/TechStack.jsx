@@ -4,11 +4,11 @@ import { Code, Database, Palette } from 'lucide-react'
 
 const TechStack = () => {
   const technologies = [
-    { name: 'Node.js', icon: '⚡', category: 'backend' },
-    { name: 'Laravel', icon: '🔷', category: 'backend' },
-    { name: 'MySQL', icon: '🗄️', category: 'database' },
-    { name: 'Figma', icon: '🎨', category: 'design' },
-    { name: 'React', icon: '⚛️', category: 'frontend' },
+    { name: 'Node.js', icon: '⚡', category: 'backend', context: 'server-side scripting, API development' },
+    { name: 'Laravel', icon: '🔷', category: 'backend', context: 'REST APIs, Eloquent ORM, caching (Redis)' },
+    { name: 'MySQL', icon: '🗄️', category: 'database', context: 'schema design, query optimization' },
+    { name: 'Figma', icon: '🎨', category: 'design', context: 'UI/UX prototyping' },
+    { name: 'React', icon: '⚛️', category: 'frontend', context: 'component-based SPA development' },
   ]
 
   const containerVariants = {
@@ -68,9 +68,12 @@ const TechStack = () => {
               <div className="text-5xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
                 {tech.icon}
               </div>
-              <h3 className="text-center font-semibold text-gray-800 text-lg">
+              <h3 className="text-center font-semibold text-gray-800 text-lg mb-2">
                 {tech.name}
               </h3>
+              <p className="text-center text-xs text-gray-500">
+                {tech.context}
+              </p>
             </motion.div>
           ))}
         </motion.div>

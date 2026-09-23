@@ -32,7 +32,7 @@ const Contact = () => {
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-pink-100 rounded-full blur-3xl opacity-40"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-pink-50 rounded-full blur-3xl opacity-30"></div>
-      
+
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ const Contact = () => {
             <div className="w-24 h-1.5 bg-pink-500 rounded-full"></div>
           </div>
           <p className="text-gray-600 text-lg">
-            I'm always open to discussing new projects, creative ideas, or opportunities
+            Let's build something — reach me at <a href="mailto:sierlyputrianjani89@gmail.com" className="text-pink-500 font-semibold hover:underline">sierlyputrianjani89@gmail.com</a> or connect on LinkedIn.
           </p>
         </motion.div>
 
@@ -61,7 +61,7 @@ const Contact = () => {
         >
           {/* Email */}
           <motion.a
-            href="mailto:sierlypanjani89@gmail.com"
+            href="mailto:sierlyputrianjani89@gmail.com"
             whileHover={{ scale: 1.02, y: -3 }}
             whileTap={{ scale: 0.98 }}
             className="flex items-center justify-center gap-4 mb-8 p-6 bg-pink-100 rounded-2xl hover:bg-pink-500 hover:text-white transition-all duration-300 group border border-pink-300"
@@ -72,7 +72,7 @@ const Contact = () => {
             <div className="flex-1 text-left">
               <p className="text-sm text-gray-500 mb-1 group-hover:text-white/80">Email</p>
               <p className="text-lg font-semibold text-gray-900 group-hover:text-white transition-colors">
-                sierlypanjani89@gmail.com
+                sierlyputrianjani89@gmail.com
               </p>
             </div>
             <Send className="w-5 h-5 text-pink-500 group-hover:text-white transition-colors" />

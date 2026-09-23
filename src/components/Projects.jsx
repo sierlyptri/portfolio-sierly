@@ -7,18 +7,18 @@ const Projects = () => {
   const backendProjects = [
     {
       title: 'CineBook: Cinema Ticketing & Management System',
-      description: 'A robust backend system designed to handle real-time movie scheduling, seat reservations, and seamless API integration for cinema transaction flows.',
+      description: 'A robust backend system designed to handle real-time movie scheduling, seat reservations, and seamless API integration for cinema transaction flows. Handles 100+ concurrent ticket transactions per minute with secure authentication and SQL-injection-safe middleware.',
       tech: ['Laravel', 'MySQL', 'RESTful API'],
       image: '/images/cinebook-preview.jpg',
-      github: 'https://github.com/sierlyptri/laramart.git',
+      github: 'https://github.com/sierlyptri/cinebook-be.git',
       // demo: '#',
     },
     {
       title: 'Laramart: Scalable E-Commerce Backend Engine',
-      description: 'A feature-rich e-commerce core focused on efficient product lifecycle management, shopping cart logic, and secure checkout processes with structured database architecture.',
+      description: 'A feature-rich e-commerce core focused on efficient product lifecycle management, shopping cart logic, and secure checkout processes with structured database architecture. Reduced data retrieval time from 5s to under 1s via database indexing; Redis caching improved server response efficiency by 40%.',
       tech: ['Laravel', 'MySQL', 'Blade'],
       image: '/images/laramart-preview.jpg',
-      github: 'https://github.com/sierlyptri/cinebook-be.git',
+      github: 'https://github.com/sierlyptri/laramart.git',
       //demo: '#',
     }
   ];
@@ -29,24 +29,28 @@ const Projects = () => {
       description: 'A vibrant mobile shopping experience tailored for K-pop fans, focusing on official merchandise discovery and a seamless checkout flow.',
       image: '/images/projects/ui-ux/kshop.png',
       fallback: 'https://via.placeholder.com/400x600/F472B6/FFFFFF?text=Kshop+App',
+      tech: ['Figma', 'UI/UX Design'],
     },
     {
       title: 'Swipe | Social Streaming',
       description: 'An interactive mobile platform that merges live streaming with social challenges, featuring a modern UI for co-hosting and content sharing.',
       image: '/images/projects/ui-ux/swipe.png',
       fallback: 'https://via.placeholder.com/400x600/818CF8/FFFFFF?text=Swipe+App',
+      tech: ['Figma', 'Mobile UI'],
     },
     {
       title: 'Cinebook | Movie Ticketing',
       description: 'A sleek web-based booking system designed for speed, featuring an intuitive seat selection map and a frictionless payment experience.',
       image: '/images/projects/ui-ux/cinebook.png',
       fallback: 'https://via.placeholder.com/1200x800/BE185D/FFFFFF?text=Cinebook+Web',
+      tech: ['Figma', 'Web Design'],
     },
     {
       title: 'Onedash | Affiliate Dashboard',
       description: 'A professional management tool for affiliate marketers to centralize links and track performance through real-time data visualization.',
       image: '/images/projects/ui-ux/onedash.png',
       fallback: 'https://via.placeholder.com/1200x800/059669/FFFFFF?text=Onedash+Web',
+      tech: ['Figma', 'Dashboard UI'],
     },
   ]
 
@@ -190,7 +194,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                    className="w-full h-auto group-hover:scale-110 transition-transform duration-500 cursor-pointer"
                     onClick={() => setSelectedImage({ src: project.image, title: project.title, fallback: project.fallback })}
                     onError={(e) => {
                       e.target.src = project.fallback;
@@ -198,13 +202,15 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                 </div>
-                <div className="p-6">
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-pink-500 transition-colors">
-                    {project.title}
-                  </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {project.description}
-                  </p>
+                <div className="p-4 flex flex-wrap gap-2">
+                  {(project.tech || ['Figma', 'UI/UX Design']).map((techItem, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-3 py-1 bg-pink-100 text-pink-500 text-xs font-medium rounded-full border border-pink-300"
+                    >
+                      {techItem}
+                    </span>
+                  ))}
                 </div>
               </motion.div>
             ))}

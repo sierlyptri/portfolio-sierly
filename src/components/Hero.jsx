@@ -78,10 +78,8 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 1 }}
               className="flex items-center gap-3 pt-4"
             >
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-pink-500 text-lg">★</span>
-                ))}
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-pink-100 text-pink-500">
+                <Sparkles className="w-4 h-4" />
               </div>
               <span className="text-gray-700 font-medium">Google Student Ambassador 2025</span>
             </motion.div>
